@@ -1,0 +1,7 @@
+.cache 
+.project 
+.settings/ 
+bin/
+lib/ 
+project/
+target/
