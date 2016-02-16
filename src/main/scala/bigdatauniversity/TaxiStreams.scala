@@ -1,5 +1,5 @@
-import org.apache.spark.mllib.clustering.KMeans
-import org.apache.spark.mllib.linalg.Vectors
+package bigdatauniversity
+
 import org.apache.spark.SparkContext
 import org.apache.spark.sql._
 import org.apache.spark.SparkConf
@@ -8,6 +8,7 @@ import org.apache.log4j.Level
 import org.apache.spark._
 import org.apache.spark.streaming._
 import org.apache.spark.streaming.StreamingContext._
+import org.apache.spark.streaming.dstream.DStream.toPairDStreamFunctions
 
 object TaxiStreams {
   Logger.getLogger("org").setLevel(Level.OFF)

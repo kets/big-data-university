@@ -1,11 +1,12 @@
+package bigdatauniversity
+
 import org.apache.spark.SparkContext
 import org.apache.spark.sql._
 import org.apache.spark.SparkConf
-import org.apache.spark.sql.catalyst.expressions.JoinedRow
+import scala.reflect.runtime.universe
 
 
-object lab4 {
-  
+object lab4 {  
   def main(args: Array[String]) {
     
     val conf = new SparkConf().setAppName("LD").setMaster("spark://localhost:7077");

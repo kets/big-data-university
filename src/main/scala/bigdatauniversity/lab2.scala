@@ -1,7 +1,9 @@
+package bigdatauniversity
+
 import org.apache.spark.SparkContext
 import org.apache.spark.sql._
 import org.apache.spark.SparkConf
-import org.apache.spark.sql.catalyst.expressions.JoinedRow
+import org.apache.spark.rdd.RDD.rddToPairRDDFunctions
 
 object lab2 {
    def main(args: Array[String]) {
