@@ -28,8 +28,10 @@ object lab1 {
     println(linesWithSpark);
     val scMap = readme.map(line => line.split(" ").size)
     val scReduce = scMap.reduce((a, b) => if (a > b) a else b)
-    println("map --> " + scMap);
-    //println("reduce -->" + scReduce)
+    val lineLengths = readme.map(s => s.length) //transform the data set, returns an RDD
+    val totalLength = lineLengths.reduce((a, b) => a + b) //perform an action, return the total
+    scMap.foreach(println)
+    println("reduce -->" + totalLength)
     
     val mathReduce = readme.map(line => line.split(" ").size).reduce((a, b) => Math.max(a,b))
     println("mathReduce --->" + mathReduce)
