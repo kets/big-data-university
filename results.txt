@@ -1,6 +1,4 @@
-141
-# Apache Spark
-MapPartitionsRDD[2] at filter at lab1.scala:26
-map --> MapPartitionsRDD[3] at map at lab1.scala:29
-mathReduce --->15
-wordCounts --> ShuffledRDD[7] at reduceByKey at lab1.scala:37
+count 206646
+(40.72446755683761,-73.99589934682658)
+(40.756762395656104,-73.98108961085188)
+(40.78688221382492,-73.95722886194558)
